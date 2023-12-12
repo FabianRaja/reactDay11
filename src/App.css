@@ -1,0 +1,33 @@
+.body-subject{
+    display:flex;
+    justify-content: space-between;
+}
+.body-subject-2{
+   display:flex;
+   margin:10px;
+}
+.form-section{
+    display:flex;
+    justify-content: center;
+    margin:15px;
+}
+.form-content{
+    margin: 15px;
+}
+
+@media screen and (max-width:430px){
+    .body-subject{
+        display:block;     
+    }
+    .body-subject-2{
+       display:block;
+       margin:0px;
+    }
+    .form-content{
+        margin:0px;
+    }
+    .form-section{
+        margin:0px;
+    }
+}
+
