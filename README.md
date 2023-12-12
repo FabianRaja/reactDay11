@@ -21,4 +21,4 @@ In Authors Page:
 Edit Button - By clicking this button user can edit that particular author details.
 Delete Button - By clicking this button user can delete that particular author details.
 
-- [Live Server](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
+- [Live Server](https://reactformikbyfabianrajafernando.netlify.app/)
