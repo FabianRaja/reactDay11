@@ -2,13 +2,15 @@ import React, { useContext } from "react";
 import { AppCtx } from "../Context/AppContext";
 
 export default function Author({bookAuthor,authorDoy,authorBio,index}){
-
-    
+    //useful states is imported from context
     const {info,setInfo,navigate,setUseIndex}=useContext(AppCtx);
+    //useContext and AppCtx is imported
+    //deleteAuthor function to delete the object of array from the setInfo state
     function deleteAuthor(){
         const filteredAuthorData=info.filter((value,idx)=>idx!=index);
         setInfo(filteredAuthorData);
     }
+    //editAuthor function to navigate to editAuthor page with the index value
     function editAuthor(){
         navigate("/editAuthor");
         setUseIndex(index);

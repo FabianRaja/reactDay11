@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
 
+//AppCtx is exported as createContext
 export const AppCtx=createContext(null);
+//createContext is imported
 
+//using children property so that all the children can use these context values
 export default function AppContext({children}){
+    //books array of objects
     const books=[{
         bookName:"Adventures of Tom Sawyer",
         bookAuthor:"Mark Twain",
@@ -36,6 +40,7 @@ export default function AppContext({children}){
         bookDate:2019,
     }
 ]
+   //authors array of objects
     const authors=[{     
         bookAuthor:"Mark Twain",
         authorDoy:2000,
@@ -62,6 +67,7 @@ export default function AppContext({children}){
         authorBio:"Sir Arthur Ignatius Conan Doyle KStJ, DL was a British writer and physician. He created the character Sherlock Holmes in 1887 for A Study in Scarlet, the first of four novels and fifty-six short stories about Holmes and Dr. Watson. The Sherlock Holmes stories are milestones in the field of crime fiction"
     }]
 
+    //necessary states is used and is passed as a value to the AppCtx.Provider
     const navigate=useNavigate();
     const [data,setData]=useState(books);
     const [info,setInfo]=useState(authors);

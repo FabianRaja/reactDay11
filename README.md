@@ -1,8 +1,24 @@
-# React + Vite
+# React Formik Validation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard - Books & Authors
 
-Currently, two official plugins are available:
+Users can switch between Books Page and Authors Page by clicking Books & Authors Button.
+(Default/Startup page - Books Page).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In Books Page ---> AddBook Button will be visible in the topbar.
+In Authors Page ---> AddAuthor Button will be visible in the topbar.
+
+AddBook Button - By clicking this button user can add new book details.
+AddAuthor Button - By clicking this button user can add new author details.
+
+In Books Page :
+
+Edit Button - By clicking this button user can edit that particular book details.
+Delete Button - By clicking this button user can delete that particular book details.
+
+In Authors Page:
+
+Edit Button - By clicking this button user can edit that particular author details.
+Delete Button - By clicking this button user can delete that particular author details.
+
+- [Live Server](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)

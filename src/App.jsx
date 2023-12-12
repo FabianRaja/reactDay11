@@ -10,7 +10,7 @@ import EditAuthorPage from './Pages/EditAuthorPage'
 
 function App() {
   
- 
+ //Routes and Route is used for navigating between pages
   return (
     <Routes>
       <Route exact path="/" element={<BooksPage/>}/>

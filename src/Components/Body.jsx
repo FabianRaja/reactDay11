@@ -3,12 +3,14 @@ import { AppCtx } from "../Context/AppContext";
 
 export default function Body({bookName,bookAuthor,bookNumber,bookDate,index}){
    
+    //useful states is imported from context
     const {data,setData,navigate,setUseIndex}=useContext(AppCtx);
-
+    //deleteBook function to delete the object of array from the data
     function deleteBook(){
         const filteredData=data.filter((value,idx)=>idx!=index);
         setData(filteredData);
     }
+    //editBook function to navigate to editBook page with the index value
     function editBook(){
         navigate("/editBook");
         setUseIndex(index);
